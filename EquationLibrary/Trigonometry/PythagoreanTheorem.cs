@@ -11,6 +11,10 @@ namespace EquationLibrary.Trigonometry
         public double Opposite { get; set; }
         public double Adjacent { get; set; }
 
+        public override string ToString()
+        {
+            return String.Format("(Hypothenus = {0}\nOpposite = {1}\nAdjacent = {2}\n",Hypothenus,Opposite,Adjacent);
+        }
         /// <summary>
         /// Solve for the Hypothenus side of the right angle triangle.
         /// </summary>
